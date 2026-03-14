@@ -1,0 +1,53 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+    	{"trigger": "SQLITE_OPEN", "contents": "SQLITE_OPEN:", "annotation": "omp_database.inc"},
+    	{"trigger": "UNKNOWN_SQLITE_OPEN", "annotation": "omp_database.inc"},
+    	{"trigger": "SQLITE_OPEN_READONLY", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_READWRITE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_CREATE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_DELETEONCLOSE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_EXCLUSIVE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_AUTOPROXY", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_URI", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_MEMORY", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_MAIN_DB", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_TEMP_DB", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_TRANSIENT_DB", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_MAIN_JOURNAL", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_TEMP_JOURNAL", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_SUBJOURNAL", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_SUPER_JOURNAL", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_NOMUTEX", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_FULLMUTEX", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_SHAREDCACHE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_PRIVATECACHE", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_WAL", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_NOFOLLOW", "annotation": "omp_database.inc"},
+		{"trigger": "SQLITE_OPEN_EXRESCODE", "annotation": "omp_database.inc"},
+
+		/*
+			Modern API
+		*/
+		{"trigger": "DB_Open", "contents": "DB_Open(${1:const name[]}, ${2:SQLITE_OPEN:flags = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_Close", "contents": "DB_Close(${1:DB:db})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_ExecuteQuery", "contents": "DB_ExecuteQuery(${1:DB:db}, ${2:const query[]}, ${3:OPEN_MP_TAGS:...})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_FreeResultSet", "contents": "DB_FreeResultSet(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetRowCount", "contents": "DB_GetRowCount(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_SelectNextRow", "contents": "DB_SelectNextRow(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldCount", "contents": "DB_GetFieldCount(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldName", "contents": "DB_GetFieldName(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldString", "contents": "DB_GetFieldString(${1:DBResult:result}, ${2:field}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldInt", "contents": "DB_GetFieldInt(${1:DBResult:result}, ${2:field = 0})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldFloat", "contents": "DB_GetFieldFloat(${1:DBResult:result}, ${2:field = 0})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldStringByName", "contents": "DB_GetFieldStringByName(${1:DBResult:result}, ${2:const field[]}, ${3:output[]}, ${4:size = sizeof (output)})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldIntByName", "contents": "DB_GetFieldIntByName(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetFieldFloatByName", "contents": "DB_GetFieldFloatByName(${1:DBResult:result}, ${2:const field[]})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetMemHandle", "contents": "DB_GetMemHandle(${1:DB:db})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetLegacyDBResult", "contents": "DB_GetLegacyDBResult(${1:DBResult:result})", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetDatabaseConnectionCount", "contents": "DB_GetDatabaseConnectionCount()", "annotation": "omp_database.inc"},
+		{"trigger": "DB_GetDatabaseResultSetCount", "contents": "DB_GetDatabaseResultSetCount()", "annotation": "omp_database.inc"},
+	]
+}

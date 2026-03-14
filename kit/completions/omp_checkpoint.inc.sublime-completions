@@ -1,0 +1,44 @@
+{
+    "scope": "source.pawn - variable.other.pawn",
+
+    "completions": 
+    [
+    	{"trigger": "CP_TYPE", "contents": "CP_TYPE:", "annotation": "omp_checkpoint.inc"},
+    	{"trigger": "UNKNOWN_CP_TYPE", "annotation": "omp_checkpoint.inc"},
+    	{"trigger": "CP_TYPE_GROUND_NORMAL", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_GROUND_FINISH", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_GROUND_EMPTY", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_NORMAL", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_FINISH", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_ROTATING", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_STROBING", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_SWINGING", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "CP_TYPE_AIR_BOBBING", "annotation": "omp_checkpoint.inc"},
+
+		/*
+			Natives CP
+		*/
+		{"trigger": "SetPlayerCheckpoint", "contents": "SetPlayerCheckpoint(${1:playerid}, ${2:Float:centreX}, ${3:Float:centreY}, ${4:Float:centreZ}, ${5:Float:radius})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "DisablePlayerCheckpoint", "contents": "DisablePlayerCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "IsPlayerInCheckpoint", "contents": "IsPlayerInCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "IsPlayerCheckpointActive", "contents": "IsPlayerCheckpointActive(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "GetPlayerCheckpoint", "contents": "GetPlayerCheckpoint(${1:playerid}, ${2:&Float:centreX = 0.0}, ${3:&Float:centreY = 0.0}, ${4:&Float:centreZ = 0.0}, ${5:&Float:radius = 0.0})", "annotation": "omp_checkpoint.inc"},
+		
+		/*
+			Natives Race CP
+		*/
+		{"trigger": "SetPlayerRaceCheckpoint", "contents": "SetPlayerRaceCheckpoint(${1:playerid}, ${2:CP_TYPE:type}, ${3:Float:centreX}, ${4:Float:centreY}, ${5:Float:centreZ}, ${6:Float:nextX}, ${7:Float:nextY}, ${8:Float:nextZ}, ${9:Float:radius})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "DisablePlayerRaceCheckpoint", "contents": "DisablePlayerRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "IsPlayerInRaceCheckpoint", "contents": "IsPlayerInRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "IsPlayerRaceCheckpointActive", "contents": "IsPlayerRaceCheckpointActive(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "GetPlayerRaceCheckpoint", "contents": "GetPlayerRaceCheckpoint(${1:playerid}, ${2:&Float:centreX = 0.0}, ${3:&Float:centreY = 0.0}, ${4:&Float:centreZ = 0.0}, ${5:&Float:nextX = 0.0}, ${6:&Float:nextY = 0.0}, ${7:&Float:nextZ = 0.0}, ${8:&Float:radius = 0.0})", "annotation": "omp_checkpoint.inc"},
+
+		/*
+			Callbacks
+		*/
+		{"trigger": "OnPlayerEnterCheckpoint", "contents": "OnPlayerEnterCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "OnPlayerLeaveCheckpoint", "contents": "OnPlayerLeaveCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "OnPlayerEnterRaceCheckpoint", "contents": "OnPlayerEnterRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+		{"trigger": "OnPlayerLeaveRaceCheckpoint", "contents": "OnPlayerLeaveRaceCheckpoint(${1:playerid})", "annotation": "omp_checkpoint.inc"},
+	]
+}

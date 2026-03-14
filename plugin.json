@@ -1,0 +1,30 @@
+{
+  "id": "fanorisky.pawn.kit",
+  "name": "Pawn-Kit",
+  "main": "dist/main.js",
+  "version": "1.0.6",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "files": [
+    "pawncc/pawncc.js",
+    "pawncc/pawncc.wasm"
+  ],
+  "minVersionCode": 290,
+  "keywords": [
+    "pawn",
+    "sa-mp",
+    "open.mp",
+    "snippets",
+    "highlight",
+    "autocomplete",
+    "compiler"
+  ],
+  "license": "MIT",
+  "price": 0,
+  "author": {
+    "name": "Fanorisky",
+    "email": "fanorisky168@gmail.com",
+    "url": "https://github.com/Fanorisky/acode-pawn-kit",
+    "github": "Fanorisky"
+  }
+}
