@@ -6,7 +6,7 @@ declare class EditorFile {
   loaded: boolean;
   loading: boolean;
   deletedFile: boolean;
-  session: AceAjax.IEditSession | null;
+  session: any;
   encoding: string;
   readOnly: boolean;
   markChanged: boolean;
