@@ -6,8 +6,6 @@
 /// <reference path="dialogBox.d.ts" />
 /// <reference path="fileBrowser.d.ts" />
 
-declare var ace: AceAjax.Ace;
-
 declare global {
     interface Window {
         toast(message: string, duration: number): void;
