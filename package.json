@@ -1,13 +1,12 @@
 {
   "name": "acode-pawn-kit",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "Acode plugin for Pawn SA-MP/OMP snippets",
   "main": "dist/main.js",
   "repository": "https://github.com/Fanorisky/acode-pawn-kit.git",
   "author": "Fanorisky",
   "license": "MIT",
   "dependencies": {
-    "@types/ace": "^0.0.51",
     "global": "^4.4.0",
     "html-tag-js": "^1.1.22"
   },

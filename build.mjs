@@ -18,7 +18,7 @@ let result = await esbuild.build({
 
 // Copy pawncc WASM files to dist/
 if (fs.existsSync("./kit/pawncc")) {
-    fs.cpSync("./kit/pawncc", "../dist/pawncc", { recursive: true });
+    fs.cpSync("./kit/pawncc", "./dist/pawncc", { recursive: true });
     console.log("[build] Copied kit/pawncc/ → dist/pawncc/");
 }
 

@@ -16,6 +16,17 @@
 Pawn-Kit provides syntax highlighting, snippets, and autocompletion for **SA-MP / open.mp**
 along with support for popular plugins, plus a built-in Pawn compiler — all in one Acode plugin for Android.
 
+## CodeMirror 6 support (v1.0.7)
+
+Pawn-Kit 1.0.7 is **CodeMirror-only**. Ace editor mode is no longer supported.
+Pawn files (`.pwn` and `.inc`) are registered through Acode's `editorLanguages` API,
+and use a CodeMirror 6 stream tokenizer rather than injecting editor configuration.
+Autocomplete remains available with the existing 1,946 snippets. The optional pawncc WASM
+compiler is retained.
+
+**Status:** The migration has passed TypeScript and mocked editor/tokenizer tests, but
+still requires an Android Acode integration test before publishing a stable release.
+
 ## Features
 
 - Syntax highlighting for `.pwn` and `.inc` files
@@ -33,7 +44,7 @@ Search for **Pawn-Kit** in Acode's plugin manager and install it.
 
 ## Compiling Pawn Code
 
-To compile your script, press **Ctrl+Shift+B** or **F5** while a `.pwn` file is open.
+To compile your script, enable the compiler and press **Ctrl+Shift+B** while a `.pwn` file is open.
 
 Compiler output and errors will appear in the compiler UI and will also be written to `.pawn/compile.log`.
 
