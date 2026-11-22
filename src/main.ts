@@ -4,10 +4,6 @@ import { buildCodeMirrorPawnLanguage } from './pawnHighlight';
 import { CompilerOutputPanel } from './compilerOutput';
 import { preloadWorkspaceIncludes, type PreloadCallbacks } from './pawnCompiler';
 
-declare const acode: any;
-declare const editorManager: any;
-declare const window: Window & { acode?: any };
-
 const MODE = 'pawn-kit';
 const COMMAND = 'fanorisky.pawn.kit.compile';
 const SETTINGS_DEFAULT = { snippetDocs: false, enableCompiler: false };
@@ -192,7 +188,7 @@ class PawnKit {
   }
 }
 
-if (window.acode) {
+if ((window as any).acode) {
   const kit = new PawnKit();
   acode.setPluginInit(plugin.id, (baseUrl: string, page: any) => kit.init(baseUrl, page), kit.settingsObj);
   acode.setPluginUnmount(plugin.id, () => kit.destroy());
