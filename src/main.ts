@@ -96,7 +96,7 @@ class PawnKit {
       if (file.currentMode === MODE) continue;
       const mode = String(file.currentMode || '').toLowerCase();
       if (mode && mode !== 'text' && mode !== 'plain_text') continue;
-      try { file.setMode(); }
+      try { file.setMode(MODE); }
       catch (err) { console.warn('[Pawn-Kit] Failed applying Pawn mode', err); }
     }
   }
