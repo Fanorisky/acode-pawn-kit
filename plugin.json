@@ -1,15 +1,15 @@
 {
   "id": "fanorisky.pawn.kit",
   "name": "Pawn-Kit",
-  "main": "dist/main.js",
-  "version": "1.0.6",
+  "main": "main.js",
+  "version": "1.0.7",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [
     "pawncc/pawncc.js",
     "pawncc/pawncc.wasm"
   ],
-  "minVersionCode": 290,
+  "minVersionCode": 292,
   "keywords": [
     "pawn",
     "sa-mp",
